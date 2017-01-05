@@ -58,7 +58,7 @@ p {
 
 @media (min-width: 992px) {
 	.container {
-		width:970px;
+		width: 970px;
 	}
 
 	.one-half {
@@ -78,7 +78,5 @@ p {
 	.container {
 		width: 1170px;
 	}
-
-}
 }
 

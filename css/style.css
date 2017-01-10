@@ -43,83 +43,36 @@ p {
 }
 
 .one-half, .one-third, .one-fourth {
-	width:96%;
 	float:left;
 	position: relative;
 	min-height: 1px;
 	margin: 0 2% 20px;
 }
 
-@media (min-width: 320px) {
-	.container {
-		width: 304px;
-	}
+.one-half {
+  width: 46%;
 }
 
-@media (min-width: 768px) {
-   .container {
-     width: 750px;
- 	}
+.one-third {
+  width: 29.33333%;
+}
 
-	.one-half {
-     width:46%;
-   }
+.one-fourth {
+  width: 21%;
+}
 
-   .one-third {
-     width:29.33333%;
-   }
-
-   .one-fourth {
-     width:21%;
-   }  
- }
-
- @media (min-width: 992px) {
-   .container {
-     width: 970px;
-   }
-
-   .one-half {
-     width:46%;
-   }
-
-   .one-third {
-     width:29.33333%;
-   }
-
-   .one-fourth {
-     width:21%;
-   }
- }
-
- @media (min-width: 1200px) {
-   .container {
-     width: 1170px;
-   }
-
-   .one-half {
-     width:46%;
-   }
-
-   .one-third {
-     width:29.33333%;
-   }
-   
-   .one-fourth {
-     width:21%;
-   }
- }
 
  /* HEADER */
 header {
  	color:#FFFFFF;
  	background: #34495E;
- 	background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%); 		
- }
+ 	background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+}
+}
 
 header nav {
  	padding:1em 0;
- }
+}
 
 header nav ul {
 	display:inline;
@@ -366,4 +319,58 @@ header .hero img {
 	bottom: -20px;
 }
 
+@media (min-width: 320px) {
+	/* container won't be a specific width - it'll adjust to
+		always be 90% of the screen width */
+	.container {
+		width: 90%;
+	}
 
+	/* same as above - adjusts to be 80% of the width of the container */
+	header .hero img {
+	  width: 80%;
+	}
+
+	/* without this we have some padding on our ul element, which squishes the
+		sign in and sign up text */
+	header nav ul {
+		padding: 0;
+	}
+
+	/* add some spacing below each list item (the sign in and sign up text)
+		so there's space between them when they stack */
+
+	header nav ul > li {
+		margin-bottom: 5px;
+	}
+}
+
+@media (min-width: 768px) {
+ .container {
+      width: 750px;
+		}
+
+  header .hero img {
+      width: 400px;
+  }
+
+	header nav ul > li {
+		margin-bottom: 0;
+	}
+ }
+
+ @media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+
+  header .hero img {
+      width: 654px;
+  }
+ }
+
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }

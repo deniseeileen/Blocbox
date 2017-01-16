@@ -381,7 +381,16 @@ footer .logo {
 	header nav ul > li {
 		margin-bottom: 5px;
 	}
-}
+
+	.one-third {
+		width: 96%;
+	}
+
+	.one-fourth {
+		width: 96%;
+	}
+
+	}
 
 @media (min-width: 768px) {
  .container {
@@ -395,6 +404,18 @@ footer .logo {
 	header nav ul > li {
 		margin-bottom: 0;
 	}
+
+	.one-third {
+   	width: 29.33333%;
+   }
+
+   .one-fourth {
+   	width: 43%;
+   }
+
+   footer .logo {
+   	padding: 1em 0 1em 0;
+   }
  }
 
 @media (min-width: 992px) {
@@ -405,7 +426,11 @@ footer .logo {
   header .hero img {
       width: 654px;
   }
- 
+
+  .one-fourth {
+  	width: 21%;
+  }
+
 	footer{
 		background-color: #3498DB;
 		background-image: linear-gradient(to left, #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
@@ -430,5 +455,6 @@ footer .logo {
    .container {
      width: 1170px;
    }
+
  }
 

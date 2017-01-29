@@ -68,3 +68,8 @@
     font-weight: 100;
 }
 
+.acct-settings .dropit-open .dropit-submenu {
+    bottom: 100%;
+}
+
+

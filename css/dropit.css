@@ -70,6 +70,14 @@
 
 .acct-settings .dropit-open .dropit-submenu {
     bottom: 100%;
+    top: inherit;
+    min-width: 150px;
+    padding: 15px;
+}
+
+.acct-settings .dropit-open .dropit-submenu:after {
+    top: 100%;
+    border-width: 8px 8px 0;
 }
 
 
